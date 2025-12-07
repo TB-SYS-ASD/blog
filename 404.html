@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>404 - 此页随风而去</title>
+<style>
+body{background:#1b1b1b;color:#e5e5e5;display:flex;align-items:center;justify-content:center;height:100vh;flex-direction:column;text-align:center;font-family:"PingFang SC","Microsoft YaHei";}
+h1{font-size:4rem;margin-bottom:1rem}
+p{font-size:1.2rem;opacity:.8}
+</style>
+</head>
+<body>
+<h1>404</h1>
+<p id="tips"></p>
+<script>
+const tips=[
+"浮萍漂泊，本无根。","人生若只如初见，何事 404 悲画扇。",
+"山重水复疑无路，此页茫茫去不回。","抽刀断水水更流，举杯消愁愁更 404。"
+];
+document.getElementById('tips').textContent=tips[Math.floor(Math.random()*tips.length)];
+</script>
+</body>
+</html>

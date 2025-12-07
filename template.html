@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}} · 静墨</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/crt.css">
+  <!-- 如果装了 Pygments，就把生成的 css 链接放这里 -->
+  {{highlight_css}}
+  <style>
+    main{max-width:740px;margin:3rem auto;padding:0 1.5rem}
+    h1,h2,h3{letter-spacing:1px;margin-top:1.6rem;margin-bottom:.8rem}
+    blockquote{padding-left:1rem;border-left:3px solid var(--accent);opacity:.9}
+    img{max-width:100%;border-radius:4px}
+    pre{border-radius:6px;background:#282c34!important}
+    .back{margin-bottom:2rem;font-size:.9rem}
+  </style>
+</head>
+<body class="crt">
+<canvas id="particles"></canvas>
+<a class="back" href="../index.html">← 回首页</a>
+<main>{{content}}</main>
+
+<script src="../js/particles.min.js"></script>
+<script>
+particlesJS('particles',{
+  particles:{number:{value:20},color:{value:'#b53427'},shape:{type:'circle'},
+  opacity:{value:.25,random:!0},size:{value:3,random:!0},
+  line_linked:{enable:!1},move:{enable:!0,speed:1,direction:'none',random:!0,out_mode:'out'}}
+});
+</script>
+</body>
+</html>
